@@ -1,0 +1,17 @@
+Employee Package has four classes and a main file:
+
+1. Employee --> It is an abstract class that return fullname of the employee and calculates salary.
+                Both the methods are made abstract methods using decorators.
+
+2. FulltimeEmployee --> This class inherits from the Employee class. It’ll provide the implementation for
+                 the get_salary() method. Since full-time employees get fixed salaries, you can initialize
+                 the salary in the constructor of the class.
+
+3. HourlyEmployee --> It also inherits from the Employee class. However, hourly employees get paid by working hours
+                      and their rates. Therefore, you can initialize this information in the constructor of the class.
+                      To calculate the salary for the hourly employees, you multiply the working hours and rates.
+
+4.Payroll --> This class will have a method that adds an employee to the employee list and print out the payroll. Since
+              fulltime and hourly employees share the same interfaces (full_time property and get_salary() method).
+              Therefore, the Payroll class doesn’t need to distinguish them.
+
